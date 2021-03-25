@@ -1,6 +1,5 @@
 module "bridge_service_perimeter_1" {
 
-  module "m-vpcsc-bridge" {
   source  = "app.terraform.io/joelinthecloud/m-vpcsc-bridge/google"
   version = "1.0.0"
 
