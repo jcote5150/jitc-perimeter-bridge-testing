@@ -1,6 +1,8 @@
 module "bridge_service_perimeter_1" {
 
-  source = "./modules/bridge_perimeter"
+  module "m-vpcsc-bridge" {
+  source  = "app.terraform.io/joelinthecloud/m-vpcsc-bridge/google"
+  version = "1.0.0"
 
   for_each = var.perimeters
   policy   = var.policy_id
